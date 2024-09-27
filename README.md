@@ -1,2 +1,1 @@
-# kvacdoor
-kvacdoor sources
+Gmod is dead Greg is gay go leak.
