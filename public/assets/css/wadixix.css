@@ -1,0 +1,228 @@
+.statistics-box {
+    padding-top: 14px;
+    min-height: 80px;
+    text-align: center
+}
+
+.statistics-box.with-icon {
+    position: relative;
+    padding-left: 80px;
+    text-align: right
+}
+
+.statistics-box.with-icon .ico {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 40px;
+    height: 40px;
+    font-size: 50px;
+    line-height: 80px;
+    text-align: center
+}
+
+.statistics-box.with-icon .ico.small {
+    font-size: 42px
+}
+
+.statistics-box .counter {
+    margin-top: 0px;
+    margin-bottom: 0px
+}
+
+.statistics-box .text {
+    color: #aab2bd;
+    margin: 0px
+}
+
+.form-control {
+    color: #e4d3b8;
+    background-color: #16171D;
+    background-image: none;
+    border-top-color: #2F3136;
+    border-right-color: #2F3136;
+    border-bottom-color: #2F3136;
+    border-left-color: #2F3136;
+}
+
+.form-control:focus {
+    color: #e4d3b8;
+    background-color: #16171D;
+    background-image: none;
+    border-top-color: #5e5c59;
+    border-right-color: #5e5c59;
+    border-bottom-color: #353433;
+    border-left-color: #5e5c59;
+}
+
+.payload-nav {
+    padding: .5rem 1rem;
+    font-size: 1.09375rem;
+    color:white !important;
+    line-height: 2.5;
+    border-radius: .3rem;
+    margin: 5px;
+}
+
+.height-sv {
+/*    min-height:653px;
+*/}
+
+.btn-payload {
+    width:100%;
+    font-size: 16px;
+    color:white !important;
+    line-height: 2.4;
+    border-radius: .3rem;
+    margin: 3px;
+}
+
+.bruhed {
+    opacity: .65;
+    pointer-events: none;
+}
+
+.text-purple {
+    color: #6f42c1 !important
+}
+
+.text-pink {
+    color: #e83e8c !important
+}
+
+.text-orange {
+    color: #fd7e14 !important
+}
+
+.voldemort
+{
+    color: #ffc000;
+    text-shadow: 0px 0px 8px #fabc00;
+}
+
+.admin-user-color
+{
+    color: #ff0400;
+    text-shadow: 0px 0px 8px #ff0400;
+}
+
+.vip-user-color
+{
+    color: #00ffff;
+    text-shadow: 0px 0px 8px #00ffff;
+}
+
+.voldemort_user
+{
+    color: #fff;
+    text-shadow: 0px 0px 8px #fff;
+    background-image: url(https://i.imgur.com/6AgByCA.gif);
+    background-repeat: repeat;
+}
+
+.aquaman
+{
+    color: #6991f7;
+    text-shadow: 0.5px 0.5px 5px #6991f7;
+}
+
+.godly
+{
+    color: #00FFFF;
+    background-image: url(https://i.imgur.com/6AgByCA.gif);
+    background-repeat: repeat;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #272a32
+}
+
+::-webkit-scrollbar-corner {
+    background-color: #16171d
+}
+
+::-webkit-scrollbar {
+    background-color: #1a1b21;
+    color: #d4c7b1
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #e60000, 0 0 30px #e6000c, 0 0 40px #e60000, 0 0 50px #e60000, 0 0 60px #e60000;
+  }
+  to {
+    text-shadow: 0 0 10px #fff, 0 0 20px #ff4d4d, 0 0 30px #ff4d4d, 0 0 40px #ff4d4d, 0 0 50px #ff4d4d, 0 0 60px #ff4d4d, 0 0 70px #ff4d4d;
+  }
+}
+
+@keyframes blinkingText{
+    0%{     color: #000;    }
+    49%{    color: #000; }
+    60%{    color: transparent; }
+    99%{    color:transparent;  }
+    100%{   color: #000;    }
+}
+
+.owner {
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+  background-image: url(https://i.imgur.com/6AgByCA.gif);
+  background-repeat: repeat
+}
+
+.faq-question-q-box {
+    height: 30px;
+    width: 30px;
+    color: #3bafda;
+    text-align: center;
+    border-radius: 50%;
+    float: left;
+    font-weight: 700;
+    line-height: 30px;
+    background-color: rgba(59, 175, 218, .15)
+}
+
+.faq-question {
+    margin-top: 0;
+    margin-left: 50px;
+    font-weight: 400;
+    font-size: 16px
+}
+
+.faq-answer {
+    margin-left: 50px;
+    color: #ced4da
+}
+
+.card-scroll {
+    max-height: 800px;
+    overflow-y: auto;
+}
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  overflow: hidden;
+  background: #000000;
+}
+
+#preloader:before {
+  content: "";
+  position: fixed;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  border: 6px solid #f2f2f2;
+  border-top: 6px solid #007bff;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: animate-preloader 1s linear infinite;
+  animation: animate-preloader 1s linear infinite;
+}
