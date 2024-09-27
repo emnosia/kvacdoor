@@ -1,0 +1,7 @@
+{% extends 'layouts/manager.html.twig' %}
+
+{% block title 'Dashboard' %}
+{% block body %}
+{{ parent() }}
+Hello {{ app.user.username }} {{ app.user.discriminator }}
+{% endblock %}

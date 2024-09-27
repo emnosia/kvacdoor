@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>KVacDoor - {% block title 'Home' %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Garry's mod advanced management panel" />
+    <meta name="author" content="KVacDoor" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="/assets/img/favicon.ico">
+
+    <!-- App css -->
+    <link rel="stylesheet" type="text/css" href="/assets/plugins/sweetalert2/sweetalert2.min.css?v=1.2" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/vendor.halloween.min.css?v=1.2" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/app.halloween.min.css?v=1.2" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="/assets/js/wadixexec.js?v=1.2"></script>
+    {% block stylesheet %}{% endblock %}
+
+    <link rel="shortcut icon" href="/favicon.ico">
+
+</head>
+<body id="app-layouts">
+    {% block application %}{% endblock %}
+
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/metismenu.min.js"></script>
+    <script src="/assets/js/waves.js"></script>
+    <script src="/assets/js/simplebar.min.js"></script>
+    <script src="/assets/plugins/chart-js/chart.min.js"></script>
+    <script src="/assets/plugins/sweetalert2/sweetalert2.min.js"></script>
+    <script src="/assets/js/app.js"></script>
+
+    {% block javascript %}{% endblock %}
+</body>
+</html>

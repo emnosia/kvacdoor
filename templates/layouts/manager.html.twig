@@ -1,0 +1,86 @@
+{% extends "layouts/base.html.twig" %}
+
+{% block application %}
+    <header id="page-topbar">
+        <div class="navbar-header">
+            <div class="navbar-brand-box d-flex align-items-left">
+                <a href="/manager/dashboard" class="logo">
+                    <span><img src="/assets/img/logo/large.webp" alt="KVacDoor" height="25"></span>
+                    <i><img src="/assets/img/logo/small.webp" alt="KVacDoor" height="24"></i>
+                </a>
+
+                <button type="button" class="btn btn-sm mr-2 d-lg-none px-3 font-size-16 header-item waves-effect waves-light" id="vertical-menu-btn">
+                    <i class="fa fa-fw fa-bars"></i>
+                </button>
+            </div>
+
+            <div class="d-flex align-items-center">
+
+                <div class="dropdown d-inline-block ml-2">
+                    <button type="button" class="btn header-item waves-effect waves-light" id="page-header-user-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img class="rounded-circle header-profile-user" src="{{ app.user.avatar }}" alt="{{ app.user.username }}">
+                        <span class="d-none d-sm-inline-block ml-1">{{ app.user.username }}</span>
+                        <i class="mdi mdi-chevron-down d-none d-sm-inline-block"></i>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item d-flex align-items-center justify-content-between" href="/manager/profile/1"><span>Profile</span></a>
+                        <a class="dropdown-item d-flex align-items-center justify-content-between" href="javascript:void(0)" data-toggle="modal" data-target="#luarun-backdoor"><span>Lock Account</span></a>
+                        <a class="dropdown-item d-flex align-items-center justify-content-between" href="/auth/logout"><span>Log Out</span></a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </header>
+
+    <div class="vertical-menu" id="app-sidebar">
+        <div data-simplebar class="h-100">
+            <div id="sidebar-menu">
+                <ul class="metismenu list-unstyled" id="side-menu">
+                    <li class="menu-title">Hub</li>
+
+                    <li><a href="/manager/dashboard" class="waves-effect"><i class="fa fa-home"></i><span>Dashboard</span></a></li>
+                    <li><a href="/manager/servers" class="waves-effect"><i class="fa fa-server"></i><span>My Servers</span></a></li>
+                    <li><a href="/manager/payloads" class="waves-effect"><i class="fa fa-file-code"></i><span>gLua Script</span></a></li>
+
+                    <li class="menu-title">Tools</li>
+
+                    <li><a href="/manager/obfuscator" class="waves-effect"><i class="fa fa-cogs"></i><span>Obfuscator</span></a></li>
+                    <li><a href="/manager/smart-lua" class="waves-effect"><i class="fa fa-bug"></i><span>Smart Lua</span></a></li>
+                    <li><a href="/manager/lua-scanner" class="waves-effect "><i class="fas fa-file"></i><span>Lua Scanner</span></a></li>
+                    <li><a href="/manager/steam-resolver" class="waves-effect "><i class="fab fa-steam"></i><span>Steam Resolver</span></a></li>
+                    {# <li><a href="/manager/network" class="waves-effect"><i class="fa fa-wifi"></i><span>Network</span></a></li> #}
+
+                    <li class="menu-title">Others</li>
+
+                    {# <li><a href="{{ path('manager.rules') }}" class="waves-effect"><i class="fa fa-gavel"></i><span>Rules</span></a></li> #}
+                    {# <li><a href="{{ path('manager.documentation') }}" class="waves-effect"><i class="fas fa-book"></i><span>Documentation</span></a></li> #}
+                    <li><a href="members" class="waves-effect"><i class="fa fa-users"></i><span>Members</span></a></li>
+                    <li><a href="premium" class="waves-effect voldemort"><i class="fa fa-star-half-alt"></i><span>Premium</span></a></li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-content" id="app">
+        <div class="container-fluid">
+            {% block body %}
+            <div class="row">
+                <div class="col-12">
+                    <div class="page-title-box d-flex align-items-center justify-content-between">
+                        <h4 class="mb-0 font-size-18"><i class="{% block icon 'fa fa-home' %}"></i> {{ block('title') }}</h4>
+
+                        <div class="page-title-right">
+                            <ol class="breadcrumb m-0">
+                                <li class="breadcrumb-item"><a href="/manager">KVacDoor</a></li>
+                                <li class="breadcrumb-item active">{{ block('title') }}</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endblock %}
+        </div>
+    </div>
+{% endblock %}
